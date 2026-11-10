@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# 构建产物与安装包不入库
+*.apk
+build/
+/.idea/render.experimental.xml
