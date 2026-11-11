@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ingredientListFragment">
+
+    <fragment
+        android:id="@+id/ingredientListFragment"
+        android:name="com.liang.fridgerecipe.ui.ingredient.IngredientListFragment"
+        android:label="@string/nav_fridge">
+        <action
+            android:id="@+id/action_list_to_detail"
+            app:destination="@id/ingredientDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ingredientDetailFragment"
+        android:name="com.liang.fridgerecipe.ui.ingredient.IngredientDetailFragment"
+        android:label="食材详情">
+        <argument
+            android:name="ingredientId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ingredientEditFragment"
+        android:name="com.liang.fridgerecipe.ui.ingredient.IngredientEditFragment"
+        android:label="添加食材">
+        <argument
+            android:name="ingredientId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="com.liang.fridgerecipe.ui.recipe.RecipeListFragment"
+        android:label="@string/nav_recipe" />
+
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.liang.fridgerecipe.ui.recipe.RecipeDetailFragment"
+        android:label="菜谱详情">
+        <argument
+            android:name="recipeId"
+            app:argType="long" />
+        <argument
+            android:name="ingredientId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.liang.fridgerecipe.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.liang.fridgerecipe.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings" />
+
+</navigation>

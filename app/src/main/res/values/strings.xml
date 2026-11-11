@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">recyclerviewtest</string>
+    <string name="app_name">冰箱菜谱</string>
+    <string name="nav_fridge">冰箱</string>
+    <string name="nav_recipe">菜谱</string>
+    <string name="nav_dashboard">看板</string>
+    <string name="nav_settings">设置</string>
+    <string name="ingredient_amount_format">%1$s · %2$s %3$s</string>
 </resources>
