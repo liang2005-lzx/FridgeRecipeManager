@@ -1,0 +1,235 @@
+[
+  {
+    "name": "番茄炒蛋",
+    "emoji": "🍅",
+    "category": "家常菜",
+    "minutes": 10,
+    "difficulty": 1,
+    "tips": "鸡蛋液里加一勺清水，炒出来更嫩。",
+    "steps": [
+      "番茄切块，鸡蛋打散加少许盐。",
+      "热锅凉油，倒入蛋液炒到半凝固盛出。",
+      "下番茄块炒出汁水，加少许糖。",
+      "倒回鸡蛋翻炒均匀，出锅。"
+    ],
+    "ingredients": [
+      { "name": "番茄", "amount": "2 个", "optional": false },
+      { "name": "鸡蛋", "amount": "3 个", "optional": false },
+      { "name": "小葱", "amount": "1 根", "optional": true },
+      { "name": "食用油", "amount": "适量", "optional": false },
+      { "name": "盐", "amount": "适量", "optional": false }
+    ]
+  },
+  {
+    "name": "酸辣土豆丝",
+    "emoji": "🥔",
+    "category": "家常菜",
+    "minutes": 15,
+    "difficulty": 1,
+    "tips": "切好后泡水去掉淀粉，口感更脆。",
+    "steps": [
+      "土豆切细丝，泡冷水 5 分钟捞出沥干。",
+      "干辣椒剪段，蒜切末。",
+      "热油爆香辣椒和蒜末。",
+      "下土豆丝大火快炒，加醋和盐调味。"
+    ],
+    "ingredients": [
+      { "name": "土豆", "amount": "2 个", "optional": false },
+      { "name": "干辣椒", "amount": "3 个", "optional": false },
+      { "name": "大蒜", "amount": "2 瓣", "optional": false },
+      { "name": "醋", "amount": "1 勺", "optional": false }
+    ]
+  },
+  {
+    "name": "蒜蓉西兰花",
+    "emoji": "🥦",
+    "category": "素菜",
+    "minutes": 12,
+    "difficulty": 1,
+    "tips": "焯水时加几滴油，颜色更翠绿。",
+    "steps": [
+      "西兰花切小朵，淡盐水泡 10 分钟。",
+      "水开加盐和油，焯 1 分钟后捞出。",
+      "蒜切末小火炒香。",
+      "倒入西兰花翻炒，加盐出锅。"
+    ],
+    "ingredients": [
+      { "name": "西兰花", "amount": "1 颗", "optional": false },
+      { "name": "大蒜", "amount": "4 瓣", "optional": false },
+      { "name": "盐", "amount": "适量", "optional": false }
+    ]
+  },
+  {
+    "name": "青椒肉丝",
+    "emoji": "🌶",
+    "category": "家常菜",
+    "minutes": 20,
+    "difficulty": 2,
+    "tips": "肉丝提前用生抽和淀粉抓匀，炒出来更嫩。",
+    "steps": [
+      "里脊肉切丝，加生抽、淀粉腌 10 分钟。",
+      "青椒去籽切丝。",
+      "热油滑炒肉丝至变色盛出。",
+      "炒青椒丝，倒回肉丝，加盐翻炒出锅。"
+    ],
+    "ingredients": [
+      { "name": "青椒", "amount": "3 个", "optional": false },
+      { "name": "里脊肉", "amount": "200 克", "optional": false },
+      { "name": "生抽", "amount": "1 勺", "optional": false },
+      { "name": "淀粉", "amount": "1 勺", "optional": false }
+    ]
+  },
+  {
+    "name": "香菇鸡肉粥",
+    "emoji": "🍚",
+    "category": "主食",
+    "minutes": 40,
+    "difficulty": 2,
+    "tips": "大米提前冷冻一小时，煮出来更绵。",
+    "steps": [
+      "大米洗净加水大火煮开，转小火。",
+      "香菇切片，鸡胸肉切丁焯水。",
+      "米粥熬到开花后下香菇和鸡肉。",
+      "再煮 10 分钟，加盐和葱花。"
+    ],
+    "ingredients": [
+      { "name": "大米", "amount": "1 杯", "optional": false },
+      { "name": "香菇", "amount": "4 朵", "optional": false },
+      { "name": "鸡胸肉", "amount": "150 克", "optional": false },
+      { "name": "小葱", "amount": "1 根", "optional": true }
+    ]
+  },
+  {
+    "name": "香煎鸡胸肉",
+    "emoji": "🍗",
+    "category": "快手菜",
+    "minutes": 15,
+    "difficulty": 1,
+    "tips": "用刀背拍松再用盐和黑胡椒腌，口感不柴。",
+    "steps": [
+      "鸡胸肉片成两片，用盐和黑胡椒腌 10 分钟。",
+      "平底锅少油中火煎 3 分钟。",
+      "翻面再煎 2-3 分钟。",
+      "静置 2 分钟后切条。"
+    ],
+    "ingredients": [
+      { "name": "鸡胸肉", "amount": "1 块", "optional": false },
+      { "name": "黑胡椒", "amount": "适量", "optional": true },
+      { "name": "食用油", "amount": "1 勺", "optional": false }
+    ]
+  },
+  {
+    "name": "蒜香虾仁",
+    "emoji": "🍤",
+    "category": "快手菜",
+    "minutes": 12,
+    "difficulty": 2,
+    "tips": "虾仁下锅前用厨房纸吸干水分，不容易出水。",
+    "steps": [
+      "虾仁去虾线，用盐和料酒抓匀。",
+      "蒜切末，小火炒到微黄。",
+      "下虾仁大火翻炒至变红。",
+      "加盐和黑胡椒，出锅前撒葱花。"
+    ],
+    "ingredients": [
+      { "name": "虾仁", "amount": "250 克", "optional": false },
+      { "name": "大蒜", "amount": "5 瓣", "optional": false },
+      { "name": "料酒", "amount": "1 勺", "optional": false }
+    ]
+  },
+  {
+    "name": "土豆炖牛肉",
+    "emoji": "🍲",
+    "category": "炖菜",
+    "minutes": 60,
+    "difficulty": 3,
+    "tips": "牛肉冷水下锅焯，血沫才去得干净。",
+    "steps": [
+      "牛肉切块冷水下锅焯 3 分钟，洗净。",
+      "热油炒香姜片和牛肉。",
+      "加生抽、老抽和热水，小火炖 40 分钟。",
+      "下土豆块再炖 15 分钟，收汁。"
+    ],
+    "ingredients": [
+      { "name": "牛肉", "amount": "400 克", "optional": false },
+      { "name": "土豆", "amount": "2 个", "optional": false },
+      { "name": "生抽", "amount": "2 勺", "optional": false },
+      { "name": "姜", "amount": "3 片", "optional": true }
+    ]
+  },
+  {
+    "name": "蛋炒饭",
+    "emoji": "🍛",
+    "category": "主食",
+    "minutes": 10,
+    "difficulty": 1,
+    "tips": "用隔夜冷饭，粒粒分明。",
+    "steps": [
+      "鸡蛋打散，米饭用勺子压散。",
+      "热油炒蛋至半熟，倒入米饭。",
+      "大火翻炒，加盐和生抽。",
+      "撒葱花翻匀出锅。"
+    ],
+    "ingredients": [
+      { "name": "米饭", "amount": "1 碗", "optional": false },
+      { "name": "鸡蛋", "amount": "2 个", "optional": false },
+      { "name": "小葱", "amount": "1 根", "optional": true },
+      { "name": "生抽", "amount": "1 勺", "optional": false }
+    ]
+  },
+  {
+    "name": "凉拌黄瓜",
+    "emoji": "🥒",
+    "category": "凉菜",
+    "minutes": 8,
+    "difficulty": 1,
+    "tips": "拍碎比切片更入味。",
+    "steps": [
+      "黄瓜拍碎切段，加盐腌 5 分钟倒掉水。",
+      "蒜切末，加醋、生抽、糖调汁。",
+      "浇在黄瓜上拌匀。"
+    ],
+    "ingredients": [
+      { "name": "黄瓜", "amount": "2 根", "optional": false },
+      { "name": "大蒜", "amount": "2 瓣", "optional": false },
+      { "name": "醋", "amount": "1 勺", "optional": false }
+    ]
+  },
+  {
+    "name": "牛奶蒸蛋",
+    "emoji": "🥛",
+    "category": "甜品",
+    "minutes": 15,
+    "difficulty": 1,
+    "tips": "蛋液和牛奶 1:1.5，过筛一次更滑。",
+    "steps": [
+      "鸡蛋打散，加牛奶和少许糖拌匀。",
+      "过筛倒入碗中，盖上保鲜膜。",
+      "水开后中小火蒸 10 分钟。"
+    ],
+    "ingredients": [
+      { "name": "鸡蛋", "amount": "2 个", "optional": false },
+      { "name": "牛奶", "amount": "150 毫升", "optional": false }
+    ]
+  },
+  {
+    "name": "葱油拌面",
+    "emoji": "🍜",
+    "category": "主食",
+    "minutes": 20,
+    "difficulty": 2,
+    "tips": "葱油要小火慢炸到葱段变褐，香味才出得来。",
+    "steps": [
+      "小葱切段，冷油下锅小火炸 8 分钟。",
+      "捞出葱段，加生抽和老抽煮开成酱汁。",
+      "面条煮熟捞出。",
+      "浇上葱油酱汁拌匀。"
+    ],
+    "ingredients": [
+      { "name": "面条", "amount": "1 把", "optional": false },
+      { "name": "小葱", "amount": "5 根", "optional": false },
+      { "name": "生抽", "amount": "2 勺", "optional": false },
+      { "name": "老抽", "amount": "半勺", "optional": true }
+    ]
+  }
+]
