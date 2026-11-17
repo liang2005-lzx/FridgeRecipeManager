@@ -4,6 +4,10 @@
     <!-- 过期提醒通知（Android 13+ 需要运行时申请，拒绝后 App 仍可正常使用） -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
+    <!-- 联网：在线同步菜谱 / AI 生成菜谱；断网时全程降级为本地数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name=".FridgeApp"
         android:allowBackup="true"

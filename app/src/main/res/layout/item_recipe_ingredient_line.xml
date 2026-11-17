@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/tv_mark"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_emoji_circle"
+        android:gravity="center"
+        android:text="✓"
+        android:textColor="@color/green_primary"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_ingredient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="番茄"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_ingredient_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:text="2 个"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_ingredient_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有"
+        android:textColor="@color/green_primary"
+        android:textSize="11sp" />
+
+</LinearLayout>

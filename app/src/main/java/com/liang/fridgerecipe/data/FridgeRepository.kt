@@ -102,6 +102,45 @@ class FridgeRepository private constructor(
         recipeDao.clearRecipes()
     }
 
+    /**
+     * 联网同步：用云端菜谱替换本地菜谱库。
+     * 食材库存不动，只换菜谱；写入失败会抛出异常，由调用方提示"离线模式"。
+     */
+    suspend fun replaceAllRecipes(recipes: List<Recipe>): Int = withContext(Dispatchers.IO) {
+        recipeDao.clearRecipes()
+        recipes.forEach { insertRecipeInternal(it) }
+        recipes.size
+    }
+
+    /** AI 生成的菜谱保存进本地库，返回新 id */
+    suspend fun addRecipe(recipe: Recipe): Long = withContext(Dispatchers.IO) {
+        insertRecipeInternal(recipe)
+    }
+
+    private suspend fun insertRecipeInternal(recipe: Recipe): Long {
+        val recipeId = recipeDao.insertRecipe(
+            RecipeEntity(
+                name = recipe.name,
+                emoji = recipe.emoji,
+                category = recipe.category,
+                minutes = recipe.minutes,
+                difficulty = recipe.difficulty,
+                stepsJson = RecipeWithIngredients.toJson(recipe.steps),
+                tips = recipe.tips
+            )
+        )
+        val ingredients = recipe.ingredients.map { item ->
+            RecipeIngredientEntity(
+                recipeId = recipeId,
+                name = item.name,
+                amount = item.amount,
+                optional = item.optional
+            )
+        }
+        if (ingredients.isNotEmpty()) recipeDao.insertIngredients(ingredients)
+        return recipeId
+    }
+
     /** 一键导入几条示例食材，方便演示和看板 */
     suspend fun insertDemoIngredients() = withContext(Dispatchers.IO) {
         val now = Calendar.getInstance().timeInMillis
