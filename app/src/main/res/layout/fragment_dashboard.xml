@@ -29,6 +29,18 @@
             android:textColor="@color/text_secondary"
             android:textSize="13sp" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_export"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minHeight="34dp"
+            android:text="⬇ 导出看板 CSV"
+            android:textSize="12sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

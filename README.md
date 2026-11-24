@@ -16,6 +16,7 @@ Android 课程设计主 App：菜谱 / 冰箱管理（B6，B 档）。
 | 数据看板 | 库存总数、临期/过期数量、预计浪费率；自定义 View（Canvas）绘制品类分布柱状图；「最该先吃的」前 5 条 |
 | 设置 | 提醒开关、提醒时间（MaterialTimePicker）、通知权限状态与跳转、导入示例食材、恢复内置菜谱、清空全部数据、版本信息 |
 | 联网能力 | ① 在线同步：菜谱页点「☁ 同步云端」，用 OkHttp 拉取远程 `recipes.json` 并覆盖本地菜谱库；② AI 生成：点「✨ AI 生成一道菜」，把冰箱现有食材作为提示词调用 DeepSeek，返回结构化菜谱并预览、一键保存。断网 / 无 Key 时均降级为本地内置菜谱并给出文案提示 |
+| 伴生模块 P2（数据看板） | 自定义 View 用 Canvas 手绘品类柱状图；点「⬇ 导出看板 CSV」可导出统计数据（UTF-8 BOM，Excel 直接打开）或品类柱状图 PNG（View.draw 抓 Bitmap），经 FileProvider 走系统分享面板发出，文件落在 App 专属目录、无需存储权限 |
 
 内置 12 道家常菜（assets/recipes.json），首次启动自动写入 Room。
 
@@ -45,6 +46,7 @@ Android 课程设计主 App：菜谱 / 冰箱管理（B6，B 档）。
 - **权限与降级**：Android 13+ `POST_NOTIFICATIONS`，首次进入主动申请一次；拒绝后不发通知，列表页显示「点击开启」提示条，设置页显示权限状态并可跳系统设置。
 - **三态 UI**：列表页 `Loading / Content / Error` + 空态，错误可重试；其它页面空数据有空态文案。
 - **自定义 View**：`ui/common/CategoryBarChartView`，Canvas 画横向柱状图，坐标/比例/文字全部自算（不依赖第三方图表库）。
+- **文件导出（P2 伴生模块）**：`ui/dashboard/DashboardExporter`，CSV（带 BOM）+ PNG（`View.draw` 抓 Bitmap），`FileProvider`（`${applicationId}.fileprovider`，`res/xml/file_paths.xml`）授权分享，全程不申请存储权限。
 
 ## 四、源码结构
 
